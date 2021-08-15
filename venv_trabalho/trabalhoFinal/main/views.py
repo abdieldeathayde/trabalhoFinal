@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from .models import Ingrediente
+from .models import Roupa
 
 # Create your views here.
 
 def list_page(request):
-    obj=Ingrediente.objects.all()
+    obj=Roupa.objects.all()
     
     return render (request, 'list.html', {'obj':obj})
