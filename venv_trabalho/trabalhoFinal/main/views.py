@@ -3,7 +3,7 @@ from .models import Roupa
 
 # Create your views here.
 
-def list_page(request):
+def EscolheRoupa(request):
     obj=Roupa.objects.all()
     
-    return render (request, 'list.html', {'obj':obj})
+    return render (request, 'trabalhoFinal/list_roupas.html', {'obj':obj})
