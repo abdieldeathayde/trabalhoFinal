@@ -13,8 +13,8 @@ class Roupa(models.Model):
         verbose_name_plural = 'Roupas'
         
     def get_absolute_url (self):
-        return reverse('main:roupas_detail', args = [self.slug])
+        return reverse('trabalhoFinal:roupas_detail', args = [self.slug])
     
     def __str__(self):
-        return self.nome
+        return self.slug
     
