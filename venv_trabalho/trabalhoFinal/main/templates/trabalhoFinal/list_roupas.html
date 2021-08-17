@@ -1,9 +1,33 @@
-{% extends 'trabalhoFinal/base.html' %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title> Roupas</title>
+    </head>
 
-{% block title %} Carrinho de compras {% endblock %}
+<body>
+    <div class='Masculino'>
+        <h1>Setor masculino</h1>
+    </div>
 
+    <br>
 
-{% block content %}
-    <h1>Carrinho de compras</h1>
+    <div class='Feminino'>
+        <h1>Setor feminino</h1>
+    </div>
+    
+    <br>
 
-{% endblock %}
+    <div class='Infantil'>
+        <h1>Setor infantil</h1>
+    </div>
+    <div class="container">
+    {% for x in obj %}
+        {{x.Roupas}}<hr>
+    {% endfor %}
+    </div>
+        
+
+    </div>
+</body>
+</html>
